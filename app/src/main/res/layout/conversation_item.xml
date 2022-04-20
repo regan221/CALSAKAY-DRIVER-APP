@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/rlConversationRoot"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvConversationSend"
+        app:cardElevation="3dp"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="1dp"
+        android:layout_marginStart="90dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="visible"
+        android:minWidth="50dp"
+        >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvMessageSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/tvConversationSentTime"
+            android:layout_below="@id/tvMessageSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdssssssssssdsds"
+            />
+
+    </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvConversationRecieved"
+        app:cardElevation="3dp"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="1dp"
+        android:layout_marginEnd="90dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/oca"
+        android:visibility="visible"
+        android:minWidth="50dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvMessageRecieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="s"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tvConversationRecievedTime"
+                android:layout_below="@id/tvMessageRecieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:35 pm"
+                android:layout_alignStart="@+id/tvMessageRecieved"
+                />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
